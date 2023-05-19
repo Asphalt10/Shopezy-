@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/dashBoardscreen.css" />
+    <script src="../Graph/p5.js"></script>
+    <script src="../Graph/sketch.js"></script>
+    <script src="../script/qrcode.min.js"></script>
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <!-- taskbar -->
+    <div class="tab" style="display: flex">
+      <img
+        id="minimize_btn"
+        src="../Media/minimize.svg"
+        alt=""
+        class="tab_itm"
+      />
+      <img id="maximize_btn" src="../Media/maximize.svg" class="tab_itm" />
+      <img id="close_btn" src="../Media/close.svg" alt="" class="tab_itm" />
+    </div>
+
+    <!-- total content of dashboard -->
+    <div id="contents" style="display: flex">
+      <!-- side bar -->
+      <div id="tray" style="display: flex">
+        <div id="navigations">
+          <div class="item">
+            <img
+              src="../Media/dashboardIcons/options.svg"
+              alt=""
+              id="expandMenuBtn"
+            /><span>Shopezy</span>
+          </div>
+          <div class="item" id="goToHome">
+            <img src="../Media/dashboardIcons/home.svg" alt="" /><span
+              >Home</span
+            >
+          </div>
+          <div class="item" id="invoiceBTN">
+            <img src="../Media/dashboardIcons/invoice.svg" alt="" /><span
+              >Invoice</span
+            >
+          </div>
+          <div class="item" id="StocksBTN">
+            <img src="../Media/dashboardIcons/analytics.svg" alt="" /><span
+              >Analytics</span
+            >
+          </div>
+          <div class="item">
+            <img src="../Media/dashboardIcons/graphs.svg" alt="" /><span
+              >Graphs</span
+            >
+          </div>
+          <div class="item">
+            <img src="../Media/dashboardIcons/transactions.svg" alt="" /><span
+              >Transaction</span
+            >
+          </div>
+          <div id="gotosettingsbtn" class="item">
+            <img src="../Media/dashboardIcons/setting1.svg" alt="" /><span
+              >Settings</span
+            >
+          </div>
+        </div>
+        <div id="userprofile">
+          <img id="profilepic" src="../Media/dashboardIcons/Face.png" />
+          <span id="shopName"
+            >Lessile Fashion
+            <span id="shopEmail">lesilealexandder@gmail.com</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Dasbar -->
+      <div id="dashbar" style="display: flex">
+        <!-- Top Part -->
+        <div id="top_part">
+          <div><img src="../Media/dashboardIcons/Trolly.svg" alt="" /></div>
+          <div id="Shopezy_title_">
+            <img
+              class="user_img"
+              src="../Media/dashboardIcons/Face.png"
+              alt=""
+            />
+            <div id="user_info">
+              <h1 class="ShopEzy_heading">Welcome to ShopEzy</h1>
+              <br />
+              <!-- <div> -->
+              <h2>
+                Lesile Fashion
+                <img
+                  id="tickMark"
+                  src="../Media/dashboardIcons/tick.svg"
+                  alt=""
+                />
+              </h2>
+              <p id="user_mail">Lesilealexandder@gmail.com</p>
+              <p>+1(629)7636228</p>
+              <p id="user_address">
+                2972 Westheimer Rd. Santa Ana Ranchview , Illinois 85486
+              </p>
+              <!-- </div> -->
+              <div class="icons">
+                <img src="../Media/dashboardIcons/Back.svg" alt="" />
+                <img src="../Media/dashboardIcons/Pencil.svg" alt="" />
+                <img src="../Media/dashboardIcons/notification 1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task panel -->
+
+        <div id="task_panel">
+          <div class="panel_itm" id="new_invo">New Invoice</div>
+          <div class="panel_itm" id="add_prod">Add products to stock</div>
+          <div class="panel_itm" id="search_prod">
+            Search product
+            <img src="../Media/dashboardIcons/Search.svg" alt="" />
+          </div>
+          <div class="panel_itm" id="view_analy">View Analytics</div>
+        </div>
+
+        <!-- invoice history and out of stock -->
+
+        <div id="bottom_part">
+          <div class="tables">
+            <h2>Last mini Invoice History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Invoice Number</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>00928746</td>
+                  <td>198.45</td>
+                </tr>
+                <tr>
+                  <td>90823742</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                  <td>90823742</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                  <td>90823742</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                  <td>90823742</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                  <td>082374987</td>
+                  <td>$180</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End part (table area) -->
+          <div class="tables">
+            <h2>Product that are out of stock</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Product Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Poha</td>
+                  <td>19883837</td>
+                </tr>
+                <tr>
+                  <td>Toy</td>
+                  <td>12839477</td>
+                </tr>
+                <tr>
+                  <td>Toy</td>
+                  <td>12839477</td>
+                </tr>
+                <tr>
+                  <td>Toy</td>
+                  <td>12839477</td>
+                </tr>
+                <tr>
+                  <td>Toy</td>
+                  <td>12839477</td>
+                </tr>
+                <tr>
+                  <td>yeuryi</td>
+                  <td>087492376</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side tray -->
+      <div id="side_tray" style="display: flex">
+        <div id="android_connect">
+          <img id="connection_icon" src="../Media/dashboardIcons/Phone_laptop.svg" alt="" />
+          <span class="and_cont" id="connectionProperties" style="color: red;">
+            No Android Client Connected</span
+          >
+          <input
+            type="button"
+            value="Connect android client"
+            id="Connect_btn"
+          />
+        </div>
+
+        <div>
+          <select name="interval" id="time_int">
+            <option value="">Last 7 days</option>
+            <option value="">Last 30 days</option>
+          </select>
+        </div>
+
+        <div id="total_sell">
+          <div class="tot_sell_one">
+            <h3>Total Sell</h3>
+            <p>prev sell ₹120. 0k</p>
+            <h2>₹200.0k</h2>
+          </div>
+          <div class="percent_circle">43%</div>
+          <div class="arrow_open">
+            <img src="../Media/dashboardIcons/Arrow.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- profit -->
+        <div id="profit_panel">
+          <div id="show_profit">
+            <div id="show_profitTxt">
+              <p>Profit</p>
+              <h1 id="profitValue">₹45.0k</h1>
+            </div>
+            <div class="percent_circle">3%</div>
+            <div class="arrow_open">
+              <img src="../Media/dashboardIcons/Arrow.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <main style="padding: 20px"></main>
+          </div>
+        </div>
+
+        <div id="Customers">
+          <div id="No_of_custms">
+            <h3>Customers</h3>
+            <p>prev stats 2000</p>
+            <h2>2246</h2>
+          </div>
+          <div class="percent_circle">10%</div>
+          <div class="arrow_open">
+            <img src="../Media/dashboardIcons/Arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- side_tray ends -->
+    </div>
+    <!-- Content ends here -->
+
+    <!-- scan to Connect -->
+    <div id="blur_bg" style="display: none">
+      <div class="htc">
+        <div class="part1">
+          <div>
+            <h1 class="heading">How to Connect?</h1>
+            <img src="../Media/Download.svg" alt="" />
+            <h2 class="heading">Download and install</h2>
+            <p class="heading">shopezy client app</p>
+            <p class="link_htc">https://www.someurl.com/somesuffix</p>
+          </div>
+          <div>
+            <img src="../Media/Phone.svg" alt="" style="margin-left: 25px" />
+            <h2 class="heading">Click on Scan to Connect</h2>
+            <p class="link_htc">
+              Make sure both mobile and desktop are on<br />same network
+            </p>
+          </div>
+        </div>
+        <div class="part2">
+          <h1>Scan To Connect</h1>
+          <div id="qrcode"></div>
+          <div class="sign_txt">
+            <input type="checkbox" name="Keep me sign in" id="sign" />
+            <p>Keep me signed in</p>
+          </div>
+        </div>
+        <div id="close_htc">
+          <img src="../Media/close.svg" alt="" id="close_btn_htc" />
+        </div>
+      </div>
+      <!-- htc closed -->
+    </div>
+    <!-- blur bg closed -->
+    <!-- Settings -->
+    <object
+      id="setpage"
+      class="otherpages"
+      data="../settings_html/settings.html"
+      type="text/html"
+      style="display: none"
+    ></object>
+    <object
+      id="invoicePage"
+      class="otherpages"
+      data="../dashboard/Analytics/invoice.html"
+      type="text/html"
+      style="display: none"
+    ></object>
+    <object
+      id="StockPage"
+      class="otherpages"
+      data="../dashboard/Analytics/stocks.html"
+      type="text/html"
+      style="display: none"
+    ></object>
+    <div id="hiddenIP" style="display: none"></div>
+  </body>
+  <script type="text/javascript" defer>
+    let runtimes = 0;
+    // qr generated when clicked on connect btn.also getting the ip from hiddenIP
+    document.getElementById("Connect_btn").addEventListener("click", () => {
+      if (runtimes == 0) {
+        let url = document.getElementById("hiddenIP").innerHTML;
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+          text: url,
+          width: 256,
+          height: 256,
+          colorDark: "#ffffff",
+          colorLight: "#393E3A",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+        runtimes++;
+      }
+    });
+  </script>
+</html>
