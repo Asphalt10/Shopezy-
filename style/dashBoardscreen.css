@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-y: hidden;
+}
+.tab{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: end;
+
+}
+.tab_itm{
+    width: 12px;
+    padding: 8px 12px 8px 8px;
+    cursor: pointer;
+    margin-left: 8px;
+    filter: invert(100%);
+}
+#minimize_btn:hover{
+    background-color: var(--bg_trans);
+}
+#maximize_btn:hover{
+    background-color: var(--bg_trans);
+}
+#close_btn:hover{
+    background-color: aqua;
+}
+#contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+:root{
+    --primary: #4087F3;
+    --link: #01C7F2;
+    --input_black: #36393F;
+    --bg_trans: #36393f4b;
+    --submit_bg: #303339;
+    --btn_bef: #4088f3d3;
+    --lang_col: #35373d;
+}
+#tray{
+    display: flex;
+    background-color: #191919;
+    flex-direction: column;
+    width: 15%;
+    justify-content: space-evenly;
+    margin-top: -35px;
+    height: 102vh;
+}
+
+#navigations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 85%;
+    background-color: #191919;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    color: white;
+    filter: grayscale(100%) brightness(200%);
+    cursor: pointer;
+}
+.item:hover{
+    filter: grayscale(0%) brightness(100%);
+    color: var(--primary);
+}
+.item span{
+    font-size: larger;
+    margin-left: 20px;
+    align-self: center;
+}
+#userprofile{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--input_black);
+    height: 10%;
+    margin-bottom: -1px;
+}
+#profilepic{
+    width: 50px;
+    height: fit-content;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    align-self: center;
+}
+.shopezy_tile{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    padding: 0 15px;
+}
+#shopName{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    align-self: center;
+}
+#shopEmail{
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+}
+#dashbar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+#top_part{
+    display: flex;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 5px;
+    padding: 3% 2% ;
+    justify-content: space-around;
+}
+#Shopezy_title_{
+    text-align: right;
+    display: flex;
+}
+.user_img{
+    border: 2px solid white;
+    align-self: center;
+    justify-self: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-left: 24%;
+    margin-top: -10%;
+}
+.ShopEzy_heading{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#user_info p{
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+}
+#tickMark{
+    margin-left: 18px;
+}
+#user_info h2{
+    text-transform: uppercase;
+}
+.icons{
+    width: 40%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#user_address{
+    width: 80%;
+    align-self: flex-end;
+    margin-top: 8px;
+}
+#user_mail{
+    margin-top: 10px;
+}
+
+#task_panel{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.panel_itm{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: var(--input_black);
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.panel_itm:hover{
+    background-color: black;
+}
+#search_prod{
+    display: flex;
+   align-content: space-between;
+}
+#search_prod img{
+    margin-left: 5px;
+}
+#bottom_part{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 30vh;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#bottom_part h2{
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.tables{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+    padding: 15px;
+}
+.tables tr{
+    padding: auto;
+    height: 28px;
+    color: #6b6b6b;
+}
+.tables thead{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #eeeeee;
+
+}
+.tables th{
+    color: black;
+}
+.tables tr:nth-child(even){
+    background-color: #eeeeee;
+}
+#side_tray{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 20%;
+    margin-right: 10px;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+#android_connect{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    padding: 15px 30px;
+    border-radius: 8px;
+    height: 15%;
+    justify-content: space-evenly;
+}
+.and_cont{                                     
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+#Connect_btn{
+    background-color: var(--primary);
+    color: white;
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#time_int{
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #eeeeee;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#total_sell{
+    padding: 15px 0;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+    height: 15%;
+}
+.tot_sell_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 60%;
+}
+.percent_circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: inset 8px -4px 4px rgba(0, 0, 0, 0.25);
+}
+#profit_panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+#show_profit{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+#show_profitTxt{
+    width: 60%;
+}
+#Customers{
+    display: flex;
+    background-color: #eeeeee;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    height: 13%;
+}
+#No_of_custms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+.arrow_open{
+    width: 2%;
+    padding: 5px;
+}
+/* --------------------------------     HTC       ---------------------------------------------------- */
+
+#blur_bg{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+.htc{
+    height: 70vh;
+    width: 50%;
+    border-radius: 8px;
+    padding: 1%;
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: #393E3A;
+    color: white;
+    text-align: center;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+.link_htc{
+    color: #01C7F2;
+    margin-bottom: 35px;
+
+}
+
+#sign{
+    font-size: 18px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    position: relative;
+}
+.sign_txt{
+    display: flex;
+    justify-content: center;
+}
+.sign_txt p{
+    font-size: 24px;
+
+}
+.part2 p{
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 0 5px 15px;
+}
+#close_htc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 2%;
+    margin-left: 5%;
+    padding-top: 3%;
+
+}
+.part1 h1{
+    text-align: left;
+}
+#close_btn_htc{
+    cursor: pointer;
+}
+#close_btn_htc:hover{
+    background-color: red;
+}
+.otherpages{
+    width: 85%;
+    height:calc(100vh - 20px);
+    position: fixed;
+    left: 15%;
+    top: 20px;
+
+}
