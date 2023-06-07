@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registerpage.css">
+</head>
+<body>
+    <div class="tab">
+        <div class="lang_icon"><img src="../Media/Frame.svg" alt="" /></div>
+        <select name="language" id="lang">
+          <option value="Eng">Eng</option>
+          <option value="Hindi">Hindi</option>
+        </select>
+        <img
+          id="minimize_btn"
+          src="../Media/minimize.svg"
+          alt=""
+          class="tab_itm"
+        />
+        <img
+          id="maximize_btn"
+          src="../Media/maximize.svg"
+          alt=""
+          class="tab_itm"
+        />
+        <img id="close_btn" src="../Media/close.svg" alt="" class="tab_itm" />
+    </div>
+    <!-- ................register page main content....................... -->
+    <div id="contentreg"> 
+        <div id="register" style="display: flex;">
+           <div id="reg_content">
+                <div id="left_info" class="reg_page_info">
+                    <h1 id="create">Create an Account</h1>
+                    <img id="user_img" src="../Media/faceimg+camera.png" alt="">
+                    <span class="label">EMAIL</span>
+                    <input type="text" class="userinput">
+                    <span class="label">Shop or Buisness Name</span>
+                    <input type="text" class="userinput">
+                    <span class="label">Mobile Number</span>
+                    <input class="userinput" type="text">
+                 </div>
+                <div id="right_info" class="reg_page_info">
+                    <span class="label">Shop or Buisness Owner Name</span>
+                    <input type="text" class="userinput">
+                    <span class="label">Buisness Category</span>
+                    <select id="select_buisness" type="text" class="userinput">
+                        <option value="0">Pet shop</option>
+                        <option value="1">Drugs</option>
+                        <option value="2">Grocery</option>
+                        <option value="3">Alchohol</option>
+                    </select>
+                    <span class="label">Address</span>
+                    <input type="text" class="userinput" id="addressinput">
+                    <button type="text" id="continuebtn">Continue</button>
+
+                    <span id="backtologin" class="haveAccoption">Already have an account? </span>
+                    <p class="terms">
+                       By registering you agree to Shopezy’s
+                       <a href="#" class="link_terms">Terms of Service</a> and
+                       <a href="#" class="link_terms">Privacy Policy</a>.
+                    </p>
+                </div> 
+           </div>
+        
+        </div>
+    </div>
+    
+
+       
+      
+    
+</body>
+</html>
