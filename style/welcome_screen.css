@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../Media/bg-img.png");
+    background-size: cover;
+}
+
+:root{
+    --primary: #4087F3;
+    --link: #01C7F2;
+    --input_black: #36393F;
+    --bg_trans: rgba(54, 57, 63, 0.8);
+    --submit_bg: #303339;
+    --btn_bef: #4088f3d3;
+    --lang_col: #35373d;
+}
+.tab{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    justify-content: end;
+    padding-bottom: 4px;
+}
+.tab_itm{
+    margin: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+#minimize_btn{
+    width: 20px;
+}
+#minimize_btn:hover{
+    background-color: rgba(150, 148, 148, 0.712);
+}
+#maximize_btn:hover{
+    background-color: rgba(150, 148, 148, 0.712);
+}
+#close_btn:hover{
+    background-color: red;
+}
+.lang_icon{
+    background-color: var(--lang_col);
+    height: 35px;
+    padding: 0 5px;
+
+}
+#lang{
+    background-color: var(--lang_col);
+    color: white;
+    padding-right: 15px;
+    width: 100px;
+    height: 35px;
+    left: 977px;
+    border: 0;
+    top: 0px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+    top: calc(50% - 225px);
+    left: calc(50% - 240px);
+    height: 450px;
+    width: 480px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    background-color: var(--bg_trans);
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 4px 4px var(--input_black);
+    backdrop-filter: blur(10px);
+}
+.welcome{
+    
+    justify-self: center;
+    align-self: center;
+}
+.wel_bar{
+    display: flex;
+    flex-direction: row;
+    
+}
+.wel_text{
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.excited{
+    font-weight: 300;
+    
+}
+.wel_aunty{
+    margin-top: 7px;
+}
+.ab{
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: lighter;
+}
+.need a{
+    text-decoration: none;
+    color: var(--link);
+}
+.submit{
+    background: var(--submit_bg);
+    width: 415px;
+    height: 41.17px;
+    border: 1px solid #222428;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(216, 218, 216);
+    margin-top: 5px;
+
+}
+.btn{
+    color: white;
+    background-color: var(--btn_bef);
+    width: 415px;
+    height: 45.28px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.btn:hover{
+    background-color: var(--primary);
+}
+.need{
+    text-align: left;
+    font-size: 12px;
+}
+#register{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 75vh;
+    background-color: var(--bg_trans);
+    border-radius: 8px;
+    margin-top: 80px;
+    margin-left: 150px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 4px 4px #36393F;
+}
+.first{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 50px;
+    border-right: 1px solid rgb(99, 98, 98);
+    
+}
+.second{
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 50%;
+}
+.create{
+    text-align: center;
+    font-weight: normal;
+    
+    
+}
+.link{
+    text-decoration: none;
+    color:  #01C7F2;
+
+}
+.input{
+    background: #303339;
+    border: 1px solid #222428;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    width: 415px;
+    color: white;
+}
+#Address{
+    background: #303339;
+    border: 1px solid #222428;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 125px;
+    width: 415px;
+    color: white;
+    resize: none;
+}
+#user_img{
+    padding: 40px 30%;
+    /* border: 1px solid gray;
+    border-radius: 3px; */
+    height: 104px;
+    width: 104px;
+    
+}
+.terms{
+    font-size: 17px;
+}
+#goToRegister , #backtologin{
+    cursor: pointer;
+    color: var(--primary);
+}
+#reg_page{
+    display: flex;
+    width: 100%;
+}
+.partion_first{
+    flex-direction: column;
+    /* background-color: #4087F3; */
+    width: 50%;
+    padding: 5%;
+ 
+}

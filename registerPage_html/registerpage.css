@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../Media/bg-img.png");
+    background-size: cover;
+}
+:root{
+    --primary: #4087F3;
+    --link: #01C7F2;
+    --input_black: #36393F;
+    --bg_trans: rgba(54, 57, 63, 0.8);
+    --submit_bg: #303339;
+    --btn_bef: #4088f3d3;
+    --lang_col: #35373d;
+}
+.tab{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    justify-content: end;
+    padding-bottom: 4px;
+}
+.tab_itm{
+    margin: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+.lang_icon{
+    background-color: var(--lang_col);
+    height: 35px;
+    padding: 0 5px;
+
+}
+#lang{
+    background-color: var(--lang_col);
+    color: white;
+    padding-right: 15px;
+    width: 100px;
+    height: 35px;
+    left: 977px;
+    border: 0;
+    top: 0px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+#minimize_btn{
+    width: 20px;
+}
+#minimize_btn:hover{
+    background-color: rgba(150, 148, 148, 0.712);
+}
+#maximize_btn:hover{
+    background-color: rgba(150, 148, 148, 0.712);
+}
+#close_btn:hover{
+    background-color: red;
+}
+
+#register{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 75vh;
+    background-color: var(--bg_trans);
+    border-radius: 8px;
+    margin-top: 80px;
+    margin-left: 150px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 4px 4px #36393F;
+}
+.reg_page_info{
+    flex-direction: column;
+    /* background-color: #4087F3; */
+    width: 50%;
+    padding: 5%;
+}
+#reg_content{
+    display: flex;
+    width: 100%;
+}
+#left_info{
+    display: block;
+}
+.label{
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 45px;
+    /* margin: 20px; */
+
+}
+.userinput{
+    width: 80%;
+    height: 44px;
+    border: 1px solid #222428;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgba(48, 51, 57, 0.8);
+}
+#user_img{
+    padding: 30px;
+    margin-left: 130px;
+}
+#create{
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}    
+#addressinput{
+    height: 150px;
+}
+#continuebtn{
+    background-color: #4087F3;
+    box-shadow: 0px 0px 8px rgba(64, 135, 243, 0.5);
+    border-radius: 4px;
+    height: fit-content;
+    color: white;
+    padding: 18px;
+    border: none;
+    /* margin-left:30%; */
+    width: 80%;
+    margin-top: 20px;
+}
+#backtologin{
+    cursor: pointer;
+    color: #01C7F2;
+}
+.haveAccoption{
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+.terms{
+    font-size: 17px;
+}
+.link_terms{
+    color: #01C7F2;
+}
+#select_buisness{
+    color: white;
+}
