@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+:root{
+    --primary: #4087F3;
+    --link: #01C7F2;
+    --input_black: #36393F;
+    --bg_trans: #36393f4b;
+    --submit_bg: #303339;
+    --btn_bef: #4088f3d3;
+    --lang_col: #35373d;
+}
+#tray{
+    display: flex;
+    background-color: #191919;
+    flex-direction: column;
+    width: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    height: 100vh;
+}
+.item{
+    padding: 2px;
+    color: white;
+    filter: grayscale(100%) brightness(200%);
+    cursor: pointer;
+}
+
+.item:hover{
+    filter: grayscale(0%);
+    /* border: 1px solid rgb(192, 192, 192); */
+}
+.group{
+    filter: grayscale(0%);
+}
+.group:hover{
+    background-color: none;
+}
+#tray_exp{
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    background-color: #191919;
+    height: 100vh;
+    justify-content: space-evenly;
+    
+}
+.tray_itm a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.tray_itm a:hover{
+    
+    color: #4087F3;
+}
+.shopezy_tile{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    padding: 0 15px;
+}
+#profile{
+    height: 10%;
+    position: relative;
+    top: 50px;
+    align-self: flex-end;
+    color: white;
+    background-color: #36393F;
+    display: flex;
+    align-items: center;
+    filter: grayscale(0%);
+    padding: 20px 2px;
+    
+}
+.prof_text h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.prof_text p{
+    font-size: 12px;
+    font-weight: 100;
+}
+#close_btn{
+    padding: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#close_btn:hover{
+    background-color: red;
+}
+#dashbar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60%;
+    /* background-color: rgb(180, 178, 178); */
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+#top_part{
+    display: flex;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 5px;
+    padding: 30px 100px;
+    justify-content: space-between;
+}
+#Shopezy_title_{
+    text-align: right;
+    display: flex;
+}
+.user_img{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightblue;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.ShopEzy_heading{
+    font-weight: lighter;
+}
+#user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#user_info p{
+    
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+}
+#user_info h2{
+    text-transform: uppercase;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.icons img{
+    margin-right: 30px;
+}
+#task_panel{
+    display: flex;
+    justify-content: space-evenly;
+    height: 55px;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: rgb(243, 230, 230);
+    border-radius: 5px;
+}
+.panel_itm{
+    background: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+#search_prod span{
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+#bottom_part{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 30vh;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#bottom_part h2{
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.tables{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+    padding: 15px;
+}
+.tables tr{
+    padding: auto;
+    height: 28px;
+    color: #6b6b6b;
+}
+.tables thead{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #eeeeee;
+
+}
+.tables th{
+    color: black;
+}
+.tables tr:nth-child(even){
+    background-color: #eeeeee;
+}
+#side_tray{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 15%;
+    margin-right: 10px;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+#android_connect{
+    background-color: #eeeeee;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.and_cont{
+    color: #FF4D6D;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+#Connect_btn{
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#time_int{
+    width: 230px;
+    padding: 15px 20px;
+    background-color: #eeeeee;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#total_sell{
+    padding: 15px 0;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tot_sell_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.percent_circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: inset 8px -4px 4px rgba(0, 0, 0, 0.25);
+}
+#profit_panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+#show_profit{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+#Customers{
+    display: flex;
+    background-color: #eeeeee;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+#No_of_custms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.arrow_open{
+    width: 2%;
+
+    padding: 5px;
+}

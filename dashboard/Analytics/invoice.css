@@ -1,0 +1,179 @@
+#invoice{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#top_connect{
+    text-align: right;
+    color: #4087F3;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 12px rgba(35, 19, 62, 0.5);
+    width: 70vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 2%;
+}
+.part1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.items_data{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.items_rows{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #eeeeee;
+    padding: 2%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.top_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15%;
+}
+#Name, #email, #No{
+    width: 367px;
+    height: 35px;
+    border-radius: 5px;
+}
+.dropdown{
+    height: 35px;
+    width: 267px;
+    border-radius: 5px;
+}
+.invoice_rightBtn{
+    margin: 0 5px;
+}
+#previewBtn{
+    background-color: #4087F3;
+    padding: 8px;
+    width: 135px;
+    height: 45px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Bin_btn{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    border: 1px solid #ff5555;
+    cursor: pointer;
+}
+#Setting_btn{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    border: 1px solid #191919;
+    cursor: pointer;
+}
+.below_btn{
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 2%;
+    margin-top: 15%;
+    height: 220px;
+    width: 290px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) ;
+}
+.below_btn h1{
+    color: gray;
+}
+.below_btn p{
+    color: #4087F3;
+    font-weight: bold;
+    font-size: 20px;
+}
+.add_itm{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.discount{
+    color: #4087F3;
+    font-size: 18px;
+    font-weight: 700;
+}
+.quantity{
+    margin-left: 20%;
+    margin-top: 6%;
+    padding: 5%;
+    height: 2%;
+    width: 15%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+    
+    -webkit-appearance: "Always Show Up/Down Arrows";
+    opacity: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.rows_part{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;  */
+}
+.item_no{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 4px;
+}
+.item_name{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px;
+    
+}
+.itmPrice{
+    font-size: 18px;
+    padding: 2px;
+}
+.maxPrc{
+    text-decoration: line-through;
+    position: relative;
+    bottom: 15px;
+    color: gray;
+}
+.rows_part h3{
+    font-size: 24px;
+    color: gray;
+}
+.rows_part h2{
+    font-size: 30px;
+    color: gray;
+}
+.itmQn{
+    color: gray;
+    font-size: 18px;
+    font-weight: 700;
+}
+.threeDot{
+    cursor: pointer;
+}
+#addItm{
+    width: 138px;
+    height: 45px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgb(194, 192, 192);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) ;
+}

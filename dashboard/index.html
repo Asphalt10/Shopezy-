@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <script src="p5.js"></script>
+  <script src="sketch.js"></script>
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- total content of dashboard -->
+  <div id="contents">
+    <!-- side bar -->
+  <div id="tray" style="display: flex;">
+    <div class="item" id="options" onclick="show()"><a href=""><img src="icons/options.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/home.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/invoice.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/undefined.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/graphs.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/transactions.svg" alt=""></a></div>
+    <div class="item"><a href=""><img src="icons/setting-1.svg" alt=""></a></div>
+    <div class="item group"><a href=""><img src="icons/Group 134.png" alt=""></a></div>
+  </div>
+
+   <!-- Expanded side bar -->
+  <div id="tray_exp" style="display: none;">
+    <div class="shopezy_tile">
+      <div class="shop_text">ShopEzy</div>
+      <div><img src="icons/close.svg" id="close_btn" alt="" onclick="hide()"></div>
+    </div>
+    <br>
+    <div class="item tray_itm" id="home"><img src="icons/home.svg" alt=""><a href="">Home</a></div>
+    <div class="item tray_itm" id="invoice"><img src="icons/invoice.svg" alt=""><a href="">Invoice</a></div>
+    <div class="item tray_itm" id="analytics"><img src="icons/undefined.svg" alt=""><a href="">Analytics</a></div>
+    <div class="item tray_itm" id="stocks"><img src="icons/graphs.svg" alt=""><a href="">Stocks</a></div>
+    <div class="item tray_itm" id="transactions"><img src="icons/transactions.svg" alt=""><a href="">Transactions</a>
+    </div>
+
+    <!-- Expanded side bar -->
+    <div id="tray_exp" style="display: none;">
+      <div class="shopezy_tile">
+        <div class="shop_text">ShopEzy</div>
+        <div><img src="icons/close.svg" id="close_btn" alt="" onclick="hide()"></div>
+      </div>
+      <br>
+      <div class="item tray_itm" id="home"><img src="icons/home.svg" alt=""><a href="">Home</a></div>
+      <div class="item tray_itm" id="invoice"><img src="icons/invoice.svg" alt=""><a href="">Invoice</a></div>
+      <div class="item tray_itm" id="analytics"><img src="icons/undefined.svg" alt=""><a href="">Analytics</a></div>
+      <div class="item tray_itm" id="stocks"><img src="icons/graphs.svg" alt=""><a href="">Stocks</a></div>
+      <div class="item tray_itm" id="transactions"><img src="icons/transactions.svg" alt=""><a href="">Transactions</a>
+      </div>
+      <div class="item tray_itm" id="settings"><img src="icons/setting-1.svg" alt=""><a href="">Settings</a></div>
+      <div class="group tray_itm" id="profile"><a href=""><img src="icons/Group 134.png" alt=""></a>
+        <div class="prof_text">
+          <h3>Lesile Fashion</h3><br>
+          <p>Lesilealexandder@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dasbar -->
+    <div id="dashbar" style="display: flex;">
+      <!-- Top Part -->
+      <div id="top_part">
+        <div><img src="icons/Trolly.svg" alt=""></div>
+        <div id="Shopezy_title_">
+          <div class="user_img"><img src="icons/Face.png" alt=""></div>
+          <div id="user_info">
+            <h1 class="ShopEzy_heading">Welcome to ShopEzy </h1>
+            <br>
+            <!-- <div> -->
+            <h2>Lesile Fashion <span><img src="icons/tick.svg" alt=""></span></h2>
+            <p>Lesilealexandder@gmail.com</p>
+            <p>+1(629)7636228</p>
+            <br>
+            <p>Address line 1</p>
+            <p>Address line 2</p>
+            <!-- </div> -->
+            <div class="icons">
+              <img src="icons/Back.svg" alt="">
+              <img src="icons/Pencil.svg" alt="">
+              <img src="icons/notification 1.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Task panel -->
+
+      <div id="task_panel">
+        <div class="panel_itm" id="new_invo">New Invoice</div>
+        <div class="panel_itm" id="add_prod">Add products to stock</div>
+        <div class="panel_itm" id="search_prod">Search product <span><img src="icons/Search.svg" alt=""></span></div>
+        <div class="panel_itm" id="view_analy">View Analytics</div>
+      </div>
+
+      <!-- invoice history and out of stock -->
+
+      <div id="bottom_part">
+        <div class="tables">
+          <H2>Last mini Invoice History</H2>
+          <table>
+            <thead>
+              <tr>
+                <th>Invoice Number</th>
+                <th>Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>00928746</td>
+                <td>198.45</td>
+              </tr>
+              <tr>
+                <td>90823742</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>90823742</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>90823742</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>90823742</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>082374987</td>
+                <td>$180</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End part (table area) -->
+        <div class="tables">
+          <H2>Product that are out of stock</H2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Product Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Poha</td>
+                <td>19883837</td>
+              </tr>
+              <tr>
+                <td>Toy</td>
+                <td>12839477</td>
+              </tr>
+              <tr>
+                <td>Toy</td>
+                <td>12839477</td>
+              </tr>
+              <tr>
+                <td>Toy</td>
+                <td>12839477</td>
+              </tr>
+              <tr>
+                <td>Toy</td>
+                <td>12839477</td>
+              </tr>
+              <tr>
+                <td>yeuryi</td>
+                <td>087492376</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+      <!-- Side tray -->
+      <div id="side_tray" style="display: flex;">
+        <div id="android_connect">
+          <span class="and_cont"><img
+            src="icons/Phone_laptop.svg" alt="">No Android Client<br>Connected</span>
+            <br>
+            <input type="button" value="Connect android client" id="Connect_btn">
+        </div>
+
+        <div><select name="interval" id="time_int">
+            <option value="">Last 7 days </option>
+            <option value="">Last 30 days </option>
+            </select>
+        </div>
+
+        
+          <div id="total_sell">
+            <div class="tot_sell_one">
+              <h3>Total Sell</h3>
+              <p>prev sell ₹120. 0k</p>
+              <h2>₹200.0k</h2>
+            </div>
+            <div class="percent_circle">43%</div>
+            <div class="arrow_open">
+              <img src="icons/Arrow.svg" alt="">
+            </div>
+          </div>
+        
+          <!-- profit -->
+        <div id="profit_panel">
+          <div id="show_profit">
+              <div>
+                <p>Profit</p>
+                <h1>₹45.0k</h1>
+              </div>
+              <div class="percent_circle">3%</div>
+              <div class="arrow_open">
+                <img src="icons/Arrow.svg" alt="">
+              </div>
+          </div>
+          <div>
+            <main style="padding: 20px;"></main>
+          </div>
+          
+        </div>
+
+        <div id="Customers">
+          <div id="No_of_custms">
+            <h3>Customers</h3>
+            <p>prev stats 2000</p>
+            <h2>2246</h2>
+          </div>
+            <div class="percent_circle">
+              10%
+          </div>
+          <div class="arrow_open">
+            <img src="icons/Arrow.svg" alt="">
+          </div>
+        </div>
+        <!-- side_tray ends -->
+      </div>
+  <!-- Content ends here -->
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
