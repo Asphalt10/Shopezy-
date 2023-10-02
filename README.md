@@ -1,5 +1,6 @@
 # Shopezy-
 ShopEzy is an invoice and bussiness solution for small bussiness including groceries , fashion stores and almost every shops and stores that need modern analytics , stock management and invoice solution. All the calculation stuffs from GST to sale price and profits are calculated automatically.
+
 ![DashBoard](https://github.com/Asphalt10/Shopezy-/assets/80913970/a612601d-fed4-426c-b70d-3f2cc41ac874)
 
 **Features**
